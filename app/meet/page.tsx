@@ -3,6 +3,7 @@ import IraPalm from "../../public/IraPalm.png"
 import VladPalm from "../../public/VladPalm.png"
 import Palm from "@/components/palm/Palm"
 import CountDown from "@/components/countDown/CountDown"
+import { Loader } from "@deemlol/next-icons";
 
 function Meet() {
     return (

@@ -1,11 +1,13 @@
 import "./globals.css";
 import Header from "@/components/layout/header/Header";
+import { auth } from "@/auth";
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const session = await auth();
   return (
     <html className="h-full">
       <body className="h-full flex flex-col bg-red-50">
